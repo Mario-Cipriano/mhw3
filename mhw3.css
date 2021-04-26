@@ -1,0 +1,333 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 7;
+}
+
+nav #flex-cont {
+    display: flex;
+    background-color: rgba(133, 130, 130, 0.856);
+    justify-content: space-around;
+    align-items: center;
+    padding-left: none;
+    border-bottom: 2px solid silver;
+    font-family: Helvetica;
+    font-weight: bold;
+    height: 75px;
+    width: 100%;
+}
+
+nav #flex-cont a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    border-right: 2px solid silver;
+    padding: 10px 15px;
+    margin: 0;
+}
+
+nav #flex-cont img {
+    width: 150px;
+    height: 75px;
+    display: flex;
+    cursor: pointer;
+}
+
+header {
+    color: white;
+    height: 400px;
+    width: 100%;
+    background-image: url("fiere_internazionali.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 15px;
+    border-bottom: 2px solid white;
+    z-index: 1;
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+header h1.titolo {
+    font-size: 40px;
+    color: rgba(255, 255, 255, .9);
+    z-index: 3;
+    font-family: "Light 300 Italic", sans-serif;
+    text-align: center;
+    font-style: oblique;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 6px 6px 8px black;
+    padding: 5px 8px;
+    border-radius: 20px;
+    z-index: 4;
+    margin-bottom: 0px;
+}
+
+h3.sottotitolo {
+    font-size: 20px;
+    text-align: center;
+    color: rgba(238, 236, 236, 0.9);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 6px 6px 8px black;
+    z-index: 5;
+}
+
+header a.button {
+    color: white;
+    font-size: 20px;
+    border: 3px solid white;
+    background-color: rgb(255, 255, 255, 0.3);
+    padding: 3px 5px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+    border-radius: 10px;
+    z-index: 6;
+}
+
+nav #flex-cont a:hover,
+nav #flex-cont .style:hover,
+a.button:hover,
+nav #flex-cont img:hover {
+    background-color: darkgray;
+    border-radius: 10px;
+}
+
+nav #flex-cont a:active,
+nav #flex-cont .style:active,
+a.button:active,
+nav #flex-cont img:active {
+    background-color: lavender;
+}
+
+nav #flex-cont .style {
+    border-right: none;
+    background: slategray;
+    float: left;
+    border-radius: 20px;
+}
+
+#menu {
+    display: none;
+}
+
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0px;
+}
+
+.article1-preferiti {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    margin: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.section-preferiti {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.div-content {
+    background-color: #f4f4f4;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    padding: 10px;
+}
+
+.article1-preferiti h1 {
+    color: white;
+    margin: 20px;
+    display: inline;
+}
+
+.section-preferiti .div-content .div-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.section-preferiti .div-content img {
+    max-height: 50%;
+    max-width: 100%;
+    border-radius: 17px;
+}
+
+.section-preferiti .div-content .div-title h1 {
+    color: black;
+    display: flex;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.section-preferiti .div-content .div-title img {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+form {
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+}
+
+article {
+    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+#event-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+#event-view .evento,
+#event-view .music {
+    margin: 10px;
+    border: 1px solid slategray;
+    padding: 10px;
+    max-width: 300px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: flex-start;
+    border-radius: 20px;
+}
+
+#event-view .evento:hover,
+#event-view .music:hover {
+    background-color: #cfe3ff;
+}
+
+#event-view img {
+    max-width: 100%;
+    max-height: 70%;
+    border-radius: 20px;
+}
+
+#event-view .music img {
+    width: 100%;
+    max-height: 20%;
+    border-radius: 20px;
+}
+
+#modale.hidden {
+    display: none;
+}
+
+#modale {
+    position: fixed;
+    top: -20;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#modale img {
+    height: 50%;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#modale span {
+    font-family: 'Open-sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.title {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.event-status {
+    color: rgb(116, 170, 35);
+    font-weight: bold;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(26, 23, 23, 0.6);
+    margin-top: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span {
+    color: white;
+}
